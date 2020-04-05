@@ -5,10 +5,16 @@
 // 预处理指令
 #include <stdio.h>
 
+// 宏定义：此处宏定义用来定义一个常量，表示1分钟有60秒
+#define SECONDS_ONE_MINUTE 60
+// 可以定义为表达式计算出结果作为常量
+#define SCALE_FACTOR (5.0f / 9.0f)
+
 int main()
 {
     // 打印
     printf("To C, or not to C: that is the question.\n");
+    printf("How many seconds within a minute:%d\n", SECONDS_ONE_MINUTE);
 
     // 数组必须指定数组的size
     char name[20];
