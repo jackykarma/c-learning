@@ -52,4 +52,20 @@ int main()
 	// 打印第i行的所有数据
 	printf("第%d行数据是: %d, %d, %d\n", i + 1, a1[i][0], a1[i][1], a1[i][2]);
     }
+
+    // C99标准中可变长度数组
+    int n;
+    printf("Please input array length:");
+    // 程序运行时决定的长度，而不是静态编译时就定下数组长度
+    scanf("%d", &n);
+    int vara[n];
+
+    for(int i = 0; i < n; i++)
+    {
+	scanf("%d", &vara[i]);
+    }
+    for(int i = 0; i < n; i++)
+    {
+	printf("vara[%d] = %d\n", i, vara[i]);
+    }
 }
