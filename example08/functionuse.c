@@ -1,6 +1,8 @@
 /* C语言函数 */
 
 #include <stdio.h>
+// exit 函数所在头文件
+#include <stdlib.h>
 
 // 函数名：average
 // 函数形式参数：2个，分别是a和b，它们的数据类型是double
@@ -53,6 +55,9 @@ int main()
     {
 	printf("arr[%d]=%d\n", i, arr[i]);
     }
+    // 程序终止
+    exit(0);
+    //return 0;
 }
 
 // 放在函数调用之前实现函数体
